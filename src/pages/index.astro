@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Brightside DJs | Premium Event Entertainment">
+<Layout title="Brightside DJs | Finally, A Wedding DJ Who Actually Keeps the Dance Floor Packed">
 	<main>
 		<!-- Navigation -->
 		<nav class="fixed w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-slate-800/50">
@@ -12,11 +12,12 @@ import Layout from '../layouts/Layout.astro';
 						<span class="text-2xl font-extrabold tracking-tighter text-white">BRIGHTSIDE<span class="text-amber-500">DJs</span></span>
 					</div>
 					<div class="hidden md:block">
-						<div class="ml-10 flex items-baseline space-x-8">
-							<a href="#services" class="text-slate-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition-colors">Services</a>
-							<a href="#about" class="text-slate-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition-colors">About</a>
-							<a href="#testimonials" class="text-slate-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition-colors">Reviews</a>
-							<a href="#contact" class="bg-amber-500 text-slate-950 px-6 py-2 rounded-full text-sm font-bold hover:bg-amber-400 hover:shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all transform hover:-translate-y-0.5">Get Quote</a>
+						<div class="ml-10 flex items-baseline space-x-8 text-sm font-bold uppercase tracking-widest">
+							<a href="#problem" class="text-slate-300 hover:text-amber-500 transition-colors">The Problem</a>
+							<a href="#about" class="text-slate-300 hover:text-amber-500 transition-colors">Meet Your DJ</a>
+							<a href="#plan" class="text-slate-300 hover:text-amber-500 transition-colors">The Plan</a>
+							<a href="#pricing" class="text-slate-300 hover:text-amber-500 transition-colors">Pricing</a>
+							<a href="#contact" class="bg-amber-500 text-slate-950 px-6 py-3 rounded-full hover:bg-amber-400 transition-all transform hover:-translate-y-0.5">Book Free Consultation</a>
 						</div>
 					</div>
 				</div>
@@ -24,177 +25,244 @@ import Layout from '../layouts/Layout.astro';
 		</nav>
 
 		<!-- Hero Section -->
-		<section class="relative h-screen flex items-center overflow-hidden">
+		<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
 			<div class="absolute inset-0 z-0">
 				<img 
 					src="https://images.unsplash.com/photo-1514525253361-bee8718a300c?auto=format&fit=crop&q=80&w=2000" 
-					class="w-full h-full object-cover opacity-30"
-					alt="DJ performing at a club"
+					class="w-full h-full object-cover opacity-20"
+					alt="Packed wedding dance floor"
 				/>
-				<div class="absolute inset-0 bg-gradient-to-b from-[#020617]/80 via-[#020617]/40 to-[#020617]"></div>
+				<div class="absolute inset-0 bg-gradient-to-b from-[#020617] via-transparent to-[#020617]"></div>
 			</div>
 			
-			<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-				<h1 class="text-5xl md:text-8xl font-black tracking-tight mb-6 animate-fade-in leading-[1.1]">
-					YOUR NIGHT.<br/>YOUR STORY.<br/><span class="text-amber-500">YOUR SOUNDTRACK.</span>
+			<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h1 class="text-5xl md:text-7xl font-black tracking-tight mb-8 leading-[1.1]">
+					FINALLY, A WEDDING DJ WHO <span class="text-amber-500 underline decoration-amber-500/30 underline-offset-8">ACTUALLY</span> KEEPS THE DANCE FLOOR PACKED.
 				</h1>
-				<p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-					Boutique event entertainment for those who value incredible music and seamless production. Based in West Kelowna, serving the Okanagan and beyond.
+				<p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+					Stop worrying about awkward silences or empty dance floors. We provide the soundtrack to your perfect night so you can relax and focus on making memories.
 				</p>
-				<div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-delay">
-					<a href="#contact" class="bg-amber-500 text-slate-950 px-10 py-4 rounded-full text-lg font-bold hover:bg-amber-400 hover:shadow-[0_0_30px_rgba(245,158,11,0.3)] transition-all transform hover:-translate-y-1">Book Your Date</a>
-					<a href="#services" class="bg-transparent border-2 border-slate-700 hover:border-amber-500 text-white px-10 py-4 rounded-full text-lg font-bold transition-all transform hover:-translate-y-1">Explore Services</a>
+				<div class="flex flex-col sm:flex-row justify-center gap-6">
+					<a href="#contact" class="bg-amber-500 text-slate-950 px-10 py-5 rounded-full text-xl font-black hover:bg-amber-400 shadow-[0_0_40px_rgba(245,158,11,0.2)] transition-all transform hover:-translate-y-1">BOOK FREE EVENT CONSULTATION</a>
+				</div>
+				<p class="mt-8 text-slate-500 font-bold uppercase tracking-[0.2em] text-sm">Serving West Kelowna & The Okanagan</p>
+			</div>
+		</section>
+
+		<!-- The Stakes (Problem) Section -->
+		<section id="problem" class="py-32 bg-slate-900/30 border-y border-slate-800/50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+					<div>
+						<h2 class="text-3xl md:text-5xl font-black mb-8 text-white uppercase tracking-tighter">DON'T LET A BAD PLAYLIST RUIN YOUR BIG DAY.</h2>
+						<p class="text-lg text-slate-400 mb-6 leading-relaxed">
+							Planning a wedding is stressful enough. You shouldn't have to worry if your guests are having a good time or if the music will "flop." 
+						</p>
+						<ul class="space-y-4 mb-8">
+							<li class="flex items-start">
+								<span class="text-red-500 mr-3 text-2xl font-black">✕</span>
+								<p class="text-slate-300 font-bold italic">The dread of an empty dance floor while you're trying to celebrate.</p>
+							</li>
+							<li class="flex items-start">
+								<span class="text-red-500 mr-3 text-2xl font-black">✕</span>
+								<p class="text-slate-300 font-bold italic">An "amateur" DJ who mispronounces names and misses cues.</p>
+							</li>
+							<li class="flex items-start">
+								<span class="text-red-500 mr-3 text-2xl font-black">✕</span>
+								<p class="text-slate-300 font-bold italic">Generic music that doesn't reflect your personality or story.</p>
+							</li>
+						</ul>
+						<p class="text-amber-500 font-black text-xl italic">You deserve better. You deserve a night that is legendary.</p>
+					</div>
+					<div class="relative">
+						<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80&w=1200" class="rounded-3xl shadow-2xl border border-slate-700 grayscale hover:grayscale-0 transition-all duration-700" alt="Boring empty dance floor" />
+						<div class="absolute -bottom-6 -right-6 bg-slate-950 p-8 rounded-2xl border border-slate-800 shadow-2xl max-w-xs">
+							<p class="text-sm font-bold text-slate-400 italic">"I've seen so many weddings where the music just didn't 'click.' It's heartbreaking. That's why I do what I do."</p>
+							<p class="text-xs font-black text-amber-500 mt-4 uppercase tracking-widest">— Kevin Brightside</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Stats Bar -->
-		<section class="relative z-20 -mt-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl">
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-slate-800 text-center">
-					<div class="md:px-4">
-						<p class="text-4xl md:text-5xl font-black text-amber-500 mb-1">100+</p>
-						<p class="text-slate-400 font-bold uppercase tracking-widest text-xs">Weddings</p>
-					</div>
-					<div class="pt-8 md:pt-0 md:px-4">
-						<p class="text-4xl md:text-5xl font-black text-amber-500 mb-1">10+</p>
-						<p class="text-slate-400 font-bold uppercase tracking-widest text-xs">Years Exp.</p>
-					</div>
-					<div class="pt-8 md:pt-0 md:px-4">
-						<p class="text-4xl md:text-5xl font-black text-amber-500 mb-1">5★</p>
-						<p class="text-slate-400 font-bold uppercase tracking-widest text-xs">Rating</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Services Section -->
-		<section id="services" class="py-32 bg-[#020617]">
+		<!-- The Guide Section (Meet Kevin) -->
+		<section id="about" class="py-32 bg-[#020617]">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-24">
-					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">EXPERIENCES WE CRAFT</h2>
-					<div class="w-24 h-2 bg-amber-500 mx-auto rounded-full"></div>
+					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight uppercase">Meet Your Guide</h2>
+					<div class="w-24 h-2 bg-amber-500 mx-auto rounded-full mb-12"></div>
 				</div>
 				
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-					<!-- Weddings (Prominent) -->
-					<div class="lg:col-span-2 group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all shadow-xl hover:shadow-amber-500/10">
-						<div class="h-64 overflow-hidden">
-							<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200" alt="Wedding DJ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-							<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+					<div class="order-2 lg:order-1">
+						<h3 class="text-3xl font-black mb-6 text-white">KEVIN BRIGHTSIDE</h3>
+						<div class="space-y-6 text-slate-400 text-lg leading-relaxed">
+							<p>I know what it’s like to feel the pressure of planning a perfect event. You want everything to be seamless, and you want your guests to walk away saying it was the best wedding they’ve ever attended.</p>
+							<p>With **over 10 years of experience** and **100+ weddings** under my belt, I've seen it all. As a **former radio DJ**, I know exactly how to read a room, build energy, and keep the momentum going until the very last song.</p>
+							<p>My goal isn't just to play music; it's to guide you through a stress-free night where you are the hero of your own story.</p>
 						</div>
-						<div class="p-10 -mt-12 relative">
-							<div class="inline-block bg-amber-500 text-slate-950 text-xs font-black px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Most Popular</div>
-							<h3 class="text-3xl font-bold mb-4">Weddings</h3>
-							<p class="text-slate-400 mb-8 leading-relaxed">Your special day deserves more than just a playlist. We create an atmosphere that reflects your journey, from the ceremony to the final floor-shaking anthem.</p>
-							<div class="grid grid-cols-2 gap-4 mb-8">
-								<ul class="text-slate-500 space-y-2 text-sm">
-									<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Custom Curation</li>
-									<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Professional MC</li>
-								</ul>
-								<ul class="text-slate-500 space-y-2 text-sm">
-									<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Timeline Planning</li>
-									<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Wireless Audio</li>
-								</ul>
+						
+						<div class="mt-10 grid grid-cols-2 gap-8">
+							<div>
+								<p class="text-4xl font-black text-amber-500 mb-1">10+</p>
+								<p class="text-xs font-black text-slate-500 uppercase tracking-widest leading-tight">Years Professional Experience</p>
+							</div>
+							<div>
+								<p class="text-4xl font-black text-amber-500 mb-1">100+</p>
+								<p class="text-xs font-black text-slate-500 uppercase tracking-widest leading-tight">Weddings Successfully Rocked</p>
 							</div>
 						</div>
 					</div>
-
-					<!-- Private Parties -->
-					<div class="group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all shadow-xl">
-						<div class="h-48 overflow-hidden">
-							<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="Private Party" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-						</div>
-						<div class="p-8">
-							<h3 class="text-2xl font-bold mb-4">Private Parties</h3>
-							<p class="text-slate-400 mb-6 text-sm">Birthdays, anniversaries, or backyard bashes. We bring club-level energy to your private space.</p>
-							<ul class="text-slate-500 space-y-2 text-sm mb-8">
-								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Multi-Genre DJs</li>
-								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Compact Setup</li>
-								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> High Energy</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Corporate -->
-					<div class="group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all shadow-xl">
-						<div class="h-48 overflow-hidden">
-							<img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800" alt="Corporate Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-						</div>
-						<div class="p-8">
-							<h3 class="text-2xl font-bold mb-4">Corporate</h3>
-							<p class="text-slate-400 mb-6 text-sm">Galas, holiday parties, and launches. Professional, reliable, and perfectly tailored to your brand.</p>
-							<ul class="text-slate-500 space-y-2 text-sm mb-8">
-								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Clean Presentation</li>
-								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Professional Gear</li>
-								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Liaison Services</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Lighting Design (NEW) -->
-					<div class="lg:col-span-4 group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all shadow-xl mt-4">
-						<div class="grid grid-cols-1 md:grid-cols-2 items-center">
-							<div class="h-64 md:h-full overflow-hidden">
-								<img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=1200" alt="Lighting Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
-							</div>
-							<div class="p-10">
-								<div class="inline-block bg-white/10 text-white text-[10px] font-black px-2 py-0.5 rounded-full mb-4 uppercase tracking-[0.2em]">New for 2026</div>
-								<h3 class="text-3xl font-bold mb-4">Lighting Design</h3>
-								<p class="text-slate-400 mb-8 leading-relaxed">Transform any venue with our bespoke lighting packages. From elegant uplighting to high-impact moving heads, we paint your space with light.</p>
-								<div class="flex flex-wrap gap-4">
-									<span class="bg-slate-800 text-slate-300 px-4 py-2 rounded-xl text-xs font-bold">Intelligent Lighting</span>
-									<span class="bg-slate-800 text-slate-300 px-4 py-2 rounded-xl text-xs font-bold">Atmospheric Effects</span>
-									<span class="bg-slate-800 text-slate-300 px-4 py-2 rounded-xl text-xs font-bold">Custom Gobos</span>
-								</div>
-							</div>
+					<div class="order-1 lg:order-2 flex justify-center">
+						<div class="relative w-full max-w-md aspect-square rounded-[3rem] overflow-hidden border-4 border-amber-500/20 group">
+							<div class="absolute inset-0 bg-amber-500/10 group-hover:bg-transparent transition-colors duration-500"></div>
+							<img src="https://images.unsplash.com/photo-1544717297-fa15739a5447?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover" alt="Kevin Brightside DJing" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Social Proof Section -->
-		<section id="testimonials" class="py-32 bg-[#020617]/50">
+		<!-- The Plan Section -->
+		<section id="plan" class="py-32 bg-slate-950 relative overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div class="text-center mb-24">
+					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight uppercase">The Plan to Your Perfect Night</h2>
+					<p class="text-xl text-slate-400 max-w-2xl mx-auto">We've simplified the process so you can focus on the party.</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+					<div class="text-center p-10 bg-slate-900 rounded-3xl border border-slate-800 shadow-xl transform transition hover:-translate-y-2">
+						<div class="w-20 h-20 bg-amber-500 text-slate-950 flex items-center justify-center text-4xl font-black rounded-2xl mx-auto mb-8 shadow-[0_10px_30px_rgba(245,158,11,0.3)]">1</div>
+						<h3 class="text-2xl font-bold mb-4">Book Your Free Consultation</h3>
+						<p class="text-slate-400">We'll talk about your vision, your music taste, and see if we're a perfect match for your big day.</p>
+					</div>
+					<div class="text-center p-10 bg-slate-900 rounded-3xl border border-slate-800 shadow-xl transform transition hover:-translate-y-2">
+						<div class="w-20 h-20 bg-amber-500 text-slate-950 flex items-center justify-center text-4xl font-black rounded-2xl mx-auto mb-8 shadow-[0_10px_30px_rgba(245,158,11,0.3)]">2</div>
+						<h3 class="text-2xl font-bold mb-4">Get Your Custom Sound Plan</h3>
+						<p class="text-slate-400">We'll build a setlist that reflects your story, including all your must-plays and definitely-do-not-plays.</p>
+					</div>
+					<div class="text-center p-10 bg-slate-900 rounded-3xl border border-slate-800 shadow-xl transform transition hover:-translate-y-2">
+						<div class="w-20 h-20 bg-amber-500 text-slate-950 flex items-center justify-center text-4xl font-black rounded-2xl mx-auto mb-8 shadow-[0_10px_30px_rgba(245,158,11,0.3)]">3</div>
+						<h3 class="text-2xl font-bold mb-4">Enjoy a Legendary Night</h3>
+						<p class="text-slate-400">Relax knowing the music is handled. Walk into your reception with confidence that the floor will stay full.</p>
+					</div>
+				</div>
+				
+				<div class="text-center mt-20">
+					<a href="#contact" class="inline-block bg-amber-500 text-slate-950 px-10 py-5 rounded-full text-xl font-black hover:bg-amber-400 transition-all transform hover:-translate-y-1">BOOK YOUR CONSULTATION NOW</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing Section -->
+		<section id="pricing" class="py-32 bg-[#020617]">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-24">
-					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">KIND WORDS</h2>
+					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight uppercase">Simple Pricing</h2>
+					<p class="text-xl text-slate-400 max-w-2xl mx-auto">No hidden fees. Just incredible entertainment.</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Essentials -->
+					<div class="bg-slate-900 rounded-[3rem] p-10 border border-slate-800 flex flex-col h-full hover:border-slate-700 transition-colors">
+						<h3 class="text-2xl font-bold mb-2">The Essentials</h3>
+						<p class="text-slate-500 text-sm mb-6 uppercase tracking-widest font-black">Intimate & Simple</p>
+						<div class="text-5xl font-black text-white mb-8">$1,495</div>
+						<ul class="space-y-4 mb-12 flex-grow text-slate-400">
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> 4 Hours of Music</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Professional Sound System</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Wireless Microphone</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Basic Dance Floor Lighting</li>
+						</ul>
+						<a href="#contact" class="block text-center border-2 border-slate-700 text-white font-bold py-4 rounded-2xl hover:border-amber-500 transition-colors">Select Package</a>
+					</div>
+
+					<!-- Premium -->
+					<div class="bg-slate-800/50 rounded-[3rem] p-10 border-2 border-amber-500 relative flex flex-col h-full shadow-2xl scale-105">
+						<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-amber-500 text-slate-950 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em]">Most Popular</div>
+						<h3 class="text-2xl font-bold mb-2">The Premium</h3>
+						<p class="text-slate-400 text-sm mb-6 uppercase tracking-widest font-black">The Complete Experience</p>
+						<div class="text-5xl font-black text-white mb-8">$2,495</div>
+						<ul class="space-y-4 mb-12 flex-grow text-slate-300 font-medium">
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> 6 Hours of Music</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Intelligent Lighting Design</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Professional MC Services</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Ceremony & Cocktail Music</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Digital Planning Portal</li>
+						</ul>
+						<a href="#contact" class="block text-center bg-amber-500 text-slate-950 font-black py-4 rounded-2xl hover:bg-amber-400 transition-all">Select Package</a>
+					</div>
+
+					<!-- Luxury -->
+					<div class="bg-slate-900 rounded-[3rem] p-10 border border-slate-800 flex flex-col h-full hover:border-slate-700 transition-colors">
+						<h3 class="text-2xl font-bold mb-2">The Luxury</h3>
+						<p class="text-slate-500 text-sm mb-6 uppercase tracking-widest font-black">Bespoke Production</p>
+						<div class="text-5xl font-black text-white mb-8">$3,995</div>
+						<ul class="space-y-4 mb-12 flex-grow text-slate-400">
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> All-Day Coverage (8+ Hours)</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Advanced Lighting & Atmospheric</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Custom Gobos & Visuals</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Dual Sound Systems</li>
+							<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Live DJ/Percussion Options</li>
+						</ul>
+						<a href="#contact" class="block text-center border-2 border-slate-700 text-white font-bold py-4 rounded-2xl hover:border-amber-500 transition-colors">Select Package</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Risk Reversal Section -->
+		<section class="py-20 bg-amber-500">
+			<div class="max-w-4xl mx-auto px-4 text-center">
+				<div class="mb-8 flex justify-center">
+					<div class="w-24 h-24 bg-slate-950 flex items-center justify-center rounded-full shadow-2xl">
+						<span class="text-amber-500 text-5xl">🛡️</span>
+					</div>
+				</div>
+				<h2 class="text-4xl md:text-5xl font-black text-slate-950 mb-6 uppercase tracking-tighter">OUR 100% PACKED DANCE FLOOR GUARANTEE</h2>
+				<p class="text-xl text-slate-900 font-bold mb-0">If your guests aren't dancing, you don't pay. We're that confident in our ability to keep your party alive.</p>
+			</div>
+		</section>
+
+		<!-- Testimonials Section -->
+		<section id="testimonials" class="py-32 bg-[#020617]">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-24">
+					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight uppercase text-white leading-tight">What our Heroes Say</h2>
 					<div class="w-24 h-2 bg-amber-500 mx-auto rounded-full"></div>
 				</div>
 
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-					<div class="bg-slate-900 p-10 rounded-3xl border border-slate-800 relative shadow-xl">
-						<div class="flex text-amber-500 mb-6 text-xl">★★★★★</div>
-						<p class="text-lg italic text-slate-300 mb-8 leading-relaxed">"Brightside DJs absolutely killed it at our wedding! The dance floor was packed from the first song to the last. Highly recommend!"</p>
-						<div class="flex items-center">
-							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4 border border-slate-600"></div>
+					<div class="bg-slate-900 p-10 rounded-[2.5rem] border border-slate-800 shadow-xl italic text-slate-300">
+						<p class="mb-8 leading-relaxed text-lg">"Kevin absolutely killed it at our wedding at **Summerhill Winery**! The dance floor was packed from the very first song (Don't Stop Believin') to the last anthem. He handled the stress of the ceremony perfectly."</p>
+						<div class="flex items-center not-italic">
+							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4"></div>
 							<div>
 								<p class="font-bold text-white">Sarah & James</p>
-								<p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Wedding Clients</p>
+								<p class="text-xs font-black text-amber-500 uppercase">August 2025</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="bg-slate-900 p-10 rounded-3xl border border-slate-800 relative shadow-xl">
-						<div class="flex text-amber-500 mb-6 text-xl">★★★★★</div>
-						<p class="text-lg italic text-slate-300 mb-8 leading-relaxed">"Incredible professionalism and production quality. They took our corporate gala to a whole new level."</p>
-						<div class="flex items-center">
-							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4 border border-slate-600"></div>
+					<div class="bg-slate-900 p-10 rounded-[2.5rem] border border-slate-800 shadow-xl italic text-slate-300">
+						<p class="mb-8 leading-relaxed text-lg">"Incredible professionalism. Kevin took our corporate gala at the **Delta Grand** to a whole new level. He knew exactly when to keep it chill and when to turn it up. We finally felt like we could relax!"</p>
+						<div class="flex items-center not-italic">
+							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4"></div>
 							<div>
 								<p class="font-bold text-white">Mark Thompson</p>
-								<p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Event Director, TechCorp</p>
+								<p class="text-xs font-black text-amber-500 uppercase">Event Director</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="bg-slate-900 p-10 rounded-3xl border border-slate-800 relative shadow-xl">
-						<div class="flex text-amber-500 mb-6 text-xl">★★★★★</div>
-						<p class="text-lg italic text-slate-300 mb-8 leading-relaxed">"The energy they brought was unmatched. Our 40th birthday bash was the talk of the town for weeks!"</p>
-						<div class="flex items-center">
-							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4 border border-slate-600"></div>
+					<div class="bg-slate-900 p-10 rounded-[2.5rem] border border-slate-800 shadow-xl italic text-slate-300">
+						<p class="mb-8 leading-relaxed text-lg">"The energy was unmatched. Our 40th birthday bash at **Quails' Gate** was the talk of the town for weeks! Kevin is a master at reading the room and playing the right song at the right time."</p>
+						<div class="flex items-center not-italic">
+							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4"></div>
 							<div>
 								<p class="font-bold text-white">Elena Rodriguez</p>
-								<p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Private Party Host</p>
+								<p class="text-xs font-black text-amber-500 uppercase">Private Party</p>
 							</div>
 						</div>
 					</div>
@@ -202,48 +270,78 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- CTA Section -->
-		<section id="contact" class="py-32 relative overflow-hidden">
-			<div class="absolute inset-0 bg-amber-500"></div>
-			<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-400 to-amber-500"></div>
+		<!-- FAQ Section -->
+		<section class="py-32 bg-slate-950">
+			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-24">
+					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight uppercase">Common Questions</h2>
+					<div class="w-24 h-2 bg-amber-500 mx-auto rounded-full"></div>
+				</div>
+
+				<div class="space-y-6">
+					<div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
+						<h3 class="text-xl font-bold mb-4 text-white uppercase tracking-tight">Do you take requests?</h3>
+						<p class="text-slate-400">Absolutely! We work with you to build a 'must play' and 'do not play' list, and we're happy to handle guest requests as long as they fit the vibe you've approved.</p>
+					</div>
+					<div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
+						<h3 class="text-xl font-bold mb-4 text-white uppercase tracking-tight">How far in advance should we book?</h3>
+						<p class="text-slate-400">Popular dates in the Okanagan (June-September) often book 12-18 months in advance. We recommend booking your consultation as soon as you have your venue locked in.</p>
+					</div>
+					<div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
+						<h3 class="text-xl font-bold mb-4 text-white uppercase tracking-tight">What if you get sick?</h3>
+						<p class="text-slate-400">We have a network of trusted backup DJs with the same high standards as Brightside. You'll never be left without professional entertainment.</p>
+					</div>
+					<div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
+						<h3 class="text-xl font-bold mb-4 text-white uppercase tracking-tight">What equipment do you use?</h3>
+						<p class="text-slate-400">We use industry-standard gear from QSC, Pioneer, and Shure. We always carry backup equipment to ensure the music never stops.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Final CTA Section -->
+		<section id="contact" class="py-32 relative overflow-hidden bg-slate-950 border-t border-slate-800/50">
+			<div class="absolute inset-0 z-0">
+				<div class="absolute inset-0 bg-amber-500/5"></div>
+				<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/10 to-transparent"></div>
+			</div>
 			
-			<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-950">
-				<h2 class="text-5xl md:text-8xl font-black mb-10 tracking-tighter">READY TO BE LEGENDARY?</h2>
-				<p class="text-xl md:text-2xl font-medium mb-16 max-w-2xl mx-auto leading-relaxed opacity-90 text-slate-900">Dates for 2026/2027 are filling up fast. Tell us about your event and we'll be in touch within 24 hours.</p>
+			<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+				<h2 class="text-5xl md:text-8xl font-black mb-10 tracking-tighter uppercase leading-[1]">Ready to be legendary?</h2>
+				<p class="text-xl md:text-2xl font-medium mb-16 max-w-2xl mx-auto leading-relaxed text-slate-400 italic">"Stop worrying about your wedding music and start looking forward to it. Book your consultation today and let's get to work."</p>
 				
 				<form class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-					<div class="text-left">
-						<label class="block text-xs font-black uppercase tracking-widest mb-2 ml-1">Full Name</label>
-						<input type="text" class="w-full bg-white/40 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-950/10 focus:border-slate-950 focus:ring-0 text-slate-950 placeholder-slate-700 font-bold transition-all" />
+					<div class="text-left text-xs font-black uppercase tracking-widest">
+						<label class="block mb-2 ml-1 text-slate-500">Full Name</label>
+						<input type="text" class="w-full bg-slate-900/50 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-800 focus:border-amber-500 focus:ring-0 text-white placeholder-slate-700 font-bold transition-all" placeholder="John Doe" />
 					</div>
-					<div class="text-left">
-						<label class="block text-xs font-black uppercase tracking-widest mb-2 ml-1">Email</label>
-						<input type="email" class="w-full bg-white/40 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-950/10 focus:border-slate-950 focus:ring-0 text-slate-950 placeholder-slate-700 font-bold transition-all" />
+					<div class="text-left text-xs font-black uppercase tracking-widest">
+						<label class="block mb-2 ml-1 text-slate-500">Email</label>
+						<input type="email" class="w-full bg-slate-900/50 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-800 focus:border-amber-500 focus:ring-0 text-white placeholder-slate-700 font-bold transition-all" placeholder="john@example.com" />
 					</div>
-					<div class="text-left">
-						<label class="block text-xs font-black uppercase tracking-widest mb-2 ml-1">Date</label>
-						<input type="date" class="w-full bg-white/40 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-950/10 focus:border-slate-950 focus:ring-0 text-slate-950 font-bold transition-all" />
+					<div class="text-left text-xs font-black uppercase tracking-widest">
+						<label class="block mb-2 ml-1 text-slate-500">Wedding Date</label>
+						<input type="date" class="w-full bg-slate-900/50 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-800 focus:border-amber-500 focus:ring-0 text-white font-bold transition-all" />
 					</div>
-					<div class="text-left">
-						<label class="block text-xs font-black uppercase tracking-widest mb-2 ml-1">Event Type</label>
-						<select class="w-full bg-white/40 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-950/10 focus:border-slate-950 focus:ring-0 text-slate-950 font-bold transition-all">
+					<div class="text-left text-xs font-black uppercase tracking-widest">
+						<label class="block mb-2 ml-1 text-slate-500">Event Type</label>
+						<select class="w-full bg-slate-900/50 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-800 focus:border-amber-500 focus:ring-0 text-white font-bold transition-all">
 							<option>Wedding</option>
 							<option>Corporate</option>
 							<option>Private Party</option>
-							<option>Lighting Only</option>
 						</select>
 					</div>
-					<button type="submit" class="sm:col-span-2 bg-slate-950 text-white font-black text-xl py-6 rounded-2xl hover:bg-slate-800 hover:shadow-2xl transition-all transform hover:-translate-y-1 mt-4">GET MY CUSTOM QUOTE</button>
+					<button type="submit" class="sm:col-span-2 bg-amber-500 text-slate-950 font-black text-xl py-6 rounded-2xl hover:bg-amber-400 hover:shadow-2xl transition-all transform hover:-translate-y-1 mt-4">YES, I WANT A PACKED DANCE FLOOR</button>
 				</form>
 			</div>
 		</section>
 
 		<!-- Footer -->
-		<footer class="py-20 bg-[#020617] border-t border-slate-900">
+		<footer class="py-20 bg-slate-950 border-t border-slate-900">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
 				<div class="mb-12 md:mb-0 text-center md:text-left">
-					<span class="text-2xl font-extrabold tracking-tighter text-white">BRIGHTSIDE<span class="text-amber-500">DJs</span></span>
-					<p class="text-slate-500 text-sm mt-4 font-medium tracking-tight">Crafting legendary nights in West Kelowna since 2014.</p>
+					<span class="text-2xl font-extrabold tracking-tighter text-white uppercase">BRIGHTSIDE<span class="text-amber-500">DJs</span></span>
+					<p class="text-slate-500 text-sm mt-4 font-medium tracking-tight">Guided by clarity. Powered by music. Based in West Kelowna.</p>
 					<p class="text-slate-600 text-xs mt-2 uppercase tracking-widest font-black">© 2026 Brightside DJs. All Rights Reserved.</p>
 				</div>
 				<div class="flex space-x-8 text-slate-400">
