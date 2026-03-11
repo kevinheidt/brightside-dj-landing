@@ -1,0 +1,203 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Brightside DJs | Premium Event Entertainment">
+	<main>
+		<!-- Navigation -->
+		<nav class="fixed w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between h-20 items-center">
+					<div class="flex-shrink-0">
+						<span class="text-2xl font-extrabold tracking-tighter text-white">BRIGHTSIDE<span class="text-yellow-500">DJs</span></span>
+					</div>
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-8">
+							<a href="#services" class="hover:text-yellow-500 px-3 py-2 text-sm font-medium transition-colors">Services</a>
+							<a href="#about" class="hover:text-yellow-500 px-3 py-2 text-sm font-medium transition-colors">About</a>
+							<a href="#testimonials" class="hover:text-yellow-500 px-3 py-2 text-sm font-medium transition-colors">Reviews</a>
+							<a href="#contact" class="bg-yellow-500 text-zinc-950 px-6 py-2 rounded-full text-sm font-bold hover:bg-yellow-400 transition-all transform hover:scale-105">Get Quote</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="relative h-screen flex items-center overflow-hidden">
+			<div class="absolute inset-0 z-0">
+				<img 
+					src="https://images.unsplash.com/photo-1514525253361-bee8718a300c?auto=format&fit=crop&q=80&w=2000" 
+					class="w-full h-full object-cover opacity-40"
+					alt="DJ performing at a club"
+				/>
+				<div class="absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-zinc-950/40 to-zinc-950"></div>
+			</div>
+			
+			<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h1 class="text-5xl md:text-8xl font-black tracking-tight mb-6 animate-fade-in">
+					ELEVATE YOUR <br/><span class="text-yellow-500">EXPERIENCE</span>
+				</h1>
+				<p class="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-10">
+					Premium event entertainment tailored to your vision. We bring the rhythm, the light, and the life to your most important moments.
+				</p>
+				<div class="flex flex-col sm:flex-row justify-center gap-4">
+					<a href="#contact" class="bg-yellow-500 text-zinc-950 px-10 py-4 rounded-full text-lg font-bold hover:bg-yellow-400 transition-all">Book Now</a>
+					<a href="#services" class="bg-transparent border-2 border-zinc-700 hover:border-yellow-500 px-10 py-4 rounded-full text-lg font-bold transition-all">Our Services</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Section -->
+		<section id="services" class="py-24 bg-zinc-950">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-20">
+					<h2 class="text-4xl md:text-6xl font-black mb-4">OUR SERVICES</h2>
+					<div class="w-24 h-1.5 bg-yellow-500 mx-auto"></div>
+				</div>
+				
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+					<!-- Weddings -->
+					<div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-yellow-500/50 transition-all">
+						<div class="aspect-video overflow-hidden">
+							<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800" alt="Wedding DJ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+						</div>
+						<div class="p-8">
+							<h3 class="text-2xl font-bold mb-4">Weddings</h3>
+							<p class="text-zinc-400 mb-6">Your special day deserves a perfect soundtrack. From the first dance to the final encore, we ensure every moment is magical.</p>
+							<ul class="text-zinc-500 space-y-2 mb-8">
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Custom Playlists</li>
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> MC Services</li>
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Premium Sound & Lighting</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Corporate -->
+					<div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-yellow-500/50 transition-all">
+						<div class="aspect-video overflow-hidden">
+							<img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800" alt="Corporate Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+						</div>
+						<div class="p-8">
+							<h3 class="text-2xl font-bold mb-4">Corporate Events</h3>
+							<p class="text-zinc-400 mb-6">Professional entertainment for product launches, holiday parties, and galas. We represent your brand with style and energy.</p>
+							<ul class="text-zinc-500 space-y-2 mb-8">
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Brand Integration</li>
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> High-Impact Production</li>
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Seamless Coordination</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Private Events -->
+					<div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-yellow-500/50 transition-all">
+						<div class="aspect-video overflow-hidden">
+							<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="Private Party" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+						</div>
+						<div class="p-8">
+							<h3 class="text-2xl font-bold mb-4">Private Parties</h3>
+							<p class="text-zinc-400 mb-6">Birthdays, anniversaries, or "just because." We bring the party atmosphere to any venue, big or small.</p>
+							<ul class="text-zinc-500 space-y-2 mb-8">
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Theme Specialization</li>
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Interactive Experiences</li>
+								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Flexible Packages</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social Proof Section -->
+		<section id="testimonials" class="py-24 bg-zinc-900">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-20">
+					<h2 class="text-4xl md:text-6xl font-black mb-4">CLIENT LOVE</h2>
+					<div class="w-24 h-1.5 bg-yellow-500 mx-auto"></div>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="bg-zinc-800 p-10 rounded-2xl border border-zinc-700">
+						<div class="flex text-yellow-500 mb-4">★★★★★</div>
+						<p class="text-lg italic text-zinc-300 mb-6">"Brightside DJs absolutely killed it at our wedding! The dance floor was packed from the first song to the last. Highly recommend!"</p>
+						<div class="flex items-center">
+							<div class="w-12 h-12 bg-zinc-600 rounded-full mr-4"></div>
+							<div>
+								<p class="font-bold">Sarah & James</p>
+								<p class="text-sm text-zinc-500">Wedding Clients</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-zinc-800 p-10 rounded-2xl border border-zinc-700">
+						<div class="flex text-yellow-500 mb-4">★★★★★</div>
+						<p class="text-lg italic text-zinc-300 mb-6">"Incredible professionalism and production quality. They took our corporate gala to a whole new level."</p>
+						<div class="flex items-center">
+							<div class="w-12 h-12 bg-zinc-600 rounded-full mr-4"></div>
+							<div>
+								<p class="font-bold">Mark Thompson</p>
+								<p class="text-sm text-zinc-500">Event Director, TechCorp</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-zinc-800 p-10 rounded-2xl border border-zinc-700">
+						<div class="flex text-yellow-500 mb-4">★★★★★</div>
+						<p class="text-lg italic text-zinc-300 mb-6">"The energy they brought was unmatched. Our 40th birthday bash was the talk of the town for weeks!"</p>
+						<div class="flex items-center">
+							<div class="w-12 h-12 bg-zinc-600 rounded-full mr-4"></div>
+							<div>
+								<p class="font-bold">Elena Rodriguez</p>
+								<p class="text-sm text-zinc-500">Private Party Host</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section id="contact" class="py-24 bg-yellow-500 text-zinc-950">
+			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h2 class="text-5xl md:text-7xl font-black mb-8">READY TO PARTY?</h2>
+				<p class="text-xl md:text-2xl font-medium mb-12">Don't settle for average entertainment. Secure your date and let's create something legendary together.</p>
+				<form class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+					<input type="text" placeholder="Full Name" class="bg-white/90 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-zinc-950 text-zinc-900" />
+					<input type="email" placeholder="Email Address" class="bg-white/90 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-zinc-950 text-zinc-900" />
+					<input type="date" class="bg-white/90 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-zinc-950 text-zinc-900" />
+					<select class="bg-white/90 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-zinc-950 text-zinc-900">
+						<option>Wedding</option>
+						<option>Corporate Event</option>
+						<option>Private Party</option>
+					</select>
+					<button type="submit" class="sm:col-span-2 bg-zinc-950 text-white font-black text-xl py-5 rounded-xl hover:bg-zinc-800 transition-colors mt-4">GET MY FREE QUOTE</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="py-12 bg-zinc-950 border-t border-zinc-800">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+				<div class="mb-8 md:mb-0">
+					<span class="text-xl font-extrabold tracking-tighter text-white">BRIGHTSIDE<span class="text-yellow-500">DJs</span></span>
+					<p class="text-zinc-500 text-sm mt-2">© 2026 Brightside DJs. All Rights Reserved.</p>
+				</div>
+				<div class="flex space-x-6 text-zinc-400">
+					<a href="#" class="hover:text-yellow-500">Instagram</a>
+					<a href="#" class="hover:text-yellow-500">Facebook</a>
+					<a href="#" class="hover:text-yellow-500">Mixcloud</a>
+				</div>
+			</div>
+		</footer>
+	</main>
+</Layout>
+
+<style>
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateY(20px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+	.animate-fade-in {
+		animation: fadeIn 1s ease-out forwards;
+	}
+</style>
