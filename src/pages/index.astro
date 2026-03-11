@@ -5,18 +5,18 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Brightside DJs | Premium Event Entertainment">
 	<main>
 		<!-- Navigation -->
-		<nav class="fixed w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+		<nav class="fixed w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-slate-800/50">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex justify-between h-20 items-center">
 					<div class="flex-shrink-0">
-						<span class="text-2xl font-extrabold tracking-tighter text-white">BRIGHTSIDE<span class="text-yellow-500">DJs</span></span>
+						<span class="text-2xl font-extrabold tracking-tighter text-white">BRIGHTSIDE<span class="text-amber-500">DJs</span></span>
 					</div>
 					<div class="hidden md:block">
 						<div class="ml-10 flex items-baseline space-x-8">
-							<a href="#services" class="hover:text-yellow-500 px-3 py-2 text-sm font-medium transition-colors">Services</a>
-							<a href="#about" class="hover:text-yellow-500 px-3 py-2 text-sm font-medium transition-colors">About</a>
-							<a href="#testimonials" class="hover:text-yellow-500 px-3 py-2 text-sm font-medium transition-colors">Reviews</a>
-							<a href="#contact" class="bg-yellow-500 text-zinc-950 px-6 py-2 rounded-full text-sm font-bold hover:bg-yellow-400 transition-all transform hover:scale-105">Get Quote</a>
+							<a href="#services" class="text-slate-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition-colors">Services</a>
+							<a href="#about" class="text-slate-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition-colors">About</a>
+							<a href="#testimonials" class="text-slate-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition-colors">Reviews</a>
+							<a href="#contact" class="bg-amber-500 text-slate-950 px-6 py-2 rounded-full text-sm font-bold hover:bg-amber-400 hover:shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all transform hover:-translate-y-0.5">Get Quote</a>
 						</div>
 					</div>
 				</div>
@@ -28,80 +28,126 @@ import Layout from '../layouts/Layout.astro';
 			<div class="absolute inset-0 z-0">
 				<img 
 					src="https://images.unsplash.com/photo-1514525253361-bee8718a300c?auto=format&fit=crop&q=80&w=2000" 
-					class="w-full h-full object-cover opacity-40"
+					class="w-full h-full object-cover opacity-30"
 					alt="DJ performing at a club"
 				/>
-				<div class="absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-zinc-950/40 to-zinc-950"></div>
+				<div class="absolute inset-0 bg-gradient-to-b from-[#020617]/80 via-[#020617]/40 to-[#020617]"></div>
 			</div>
 			
 			<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-				<h1 class="text-5xl md:text-8xl font-black tracking-tight mb-6 animate-fade-in">
-					ELEVATE YOUR <br/><span class="text-yellow-500">EXPERIENCE</span>
+				<h1 class="text-5xl md:text-8xl font-black tracking-tight mb-6 animate-fade-in leading-[1.1]">
+					YOUR NIGHT.<br/>YOUR STORY.<br/><span class="text-amber-500">YOUR SOUNDTRACK.</span>
 				</h1>
-				<p class="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-10">
-					Premium event entertainment tailored to your vision. We bring the rhythm, the light, and the life to your most important moments.
+				<p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+					Boutique event entertainment for those who value incredible music and seamless production. Based in West Kelowna, serving the Okanagan and beyond.
 				</p>
-				<div class="flex flex-col sm:flex-row justify-center gap-4">
-					<a href="#contact" class="bg-yellow-500 text-zinc-950 px-10 py-4 rounded-full text-lg font-bold hover:bg-yellow-400 transition-all">Book Now</a>
-					<a href="#services" class="bg-transparent border-2 border-zinc-700 hover:border-yellow-500 px-10 py-4 rounded-full text-lg font-bold transition-all">Our Services</a>
+				<div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-delay">
+					<a href="#contact" class="bg-amber-500 text-slate-950 px-10 py-4 rounded-full text-lg font-bold hover:bg-amber-400 hover:shadow-[0_0_30px_rgba(245,158,11,0.3)] transition-all transform hover:-translate-y-1">Book Your Date</a>
+					<a href="#services" class="bg-transparent border-2 border-slate-700 hover:border-amber-500 text-white px-10 py-4 rounded-full text-lg font-bold transition-all transform hover:-translate-y-1">Explore Services</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Stats Bar -->
+		<section class="relative z-20 -mt-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-slate-800 text-center">
+					<div class="md:px-4">
+						<p class="text-4xl md:text-5xl font-black text-amber-500 mb-1">100+</p>
+						<p class="text-slate-400 font-bold uppercase tracking-widest text-xs">Weddings</p>
+					</div>
+					<div class="pt-8 md:pt-0 md:px-4">
+						<p class="text-4xl md:text-5xl font-black text-amber-500 mb-1">10+</p>
+						<p class="text-slate-400 font-bold uppercase tracking-widest text-xs">Years Exp.</p>
+					</div>
+					<div class="pt-8 md:pt-0 md:px-4">
+						<p class="text-4xl md:text-5xl font-black text-amber-500 mb-1">5★</p>
+						<p class="text-slate-400 font-bold uppercase tracking-widest text-xs">Rating</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Services Section -->
-		<section id="services" class="py-24 bg-zinc-950">
+		<section id="services" class="py-32 bg-[#020617]">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center mb-20">
-					<h2 class="text-4xl md:text-6xl font-black mb-4">OUR SERVICES</h2>
-					<div class="w-24 h-1.5 bg-yellow-500 mx-auto"></div>
+				<div class="text-center mb-24">
+					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">EXPERIENCES WE CRAFT</h2>
+					<div class="w-24 h-2 bg-amber-500 mx-auto rounded-full"></div>
 				</div>
 				
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-					<!-- Weddings -->
-					<div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-yellow-500/50 transition-all">
-						<div class="aspect-video overflow-hidden">
-							<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800" alt="Wedding DJ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<!-- Weddings (Prominent) -->
+					<div class="lg:col-span-2 group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all shadow-xl hover:shadow-amber-500/10">
+						<div class="h-64 overflow-hidden">
+							<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200" alt="Wedding DJ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+							<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+						</div>
+						<div class="p-10 -mt-12 relative">
+							<div class="inline-block bg-amber-500 text-slate-950 text-xs font-black px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Most Popular</div>
+							<h3 class="text-3xl font-bold mb-4">Weddings</h3>
+							<p class="text-slate-400 mb-8 leading-relaxed">Your special day deserves more than just a playlist. We create an atmosphere that reflects your journey, from the ceremony to the final floor-shaking anthem.</p>
+							<div class="grid grid-cols-2 gap-4 mb-8">
+								<ul class="text-slate-500 space-y-2 text-sm">
+									<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Custom Curation</li>
+									<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Professional MC</li>
+								</ul>
+								<ul class="text-slate-500 space-y-2 text-sm">
+									<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Timeline Planning</li>
+									<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Wireless Audio</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Private Parties -->
+					<div class="group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all shadow-xl">
+						<div class="h-48 overflow-hidden">
+							<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="Private Party" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 						</div>
 						<div class="p-8">
-							<h3 class="text-2xl font-bold mb-4">Weddings</h3>
-							<p class="text-zinc-400 mb-6">Your special day deserves a perfect soundtrack. From the first dance to the final encore, we ensure every moment is magical.</p>
-							<ul class="text-zinc-500 space-y-2 mb-8">
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Custom Playlists</li>
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> MC Services</li>
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Premium Sound & Lighting</li>
+							<h3 class="text-2xl font-bold mb-4">Private Parties</h3>
+							<p class="text-slate-400 mb-6 text-sm">Birthdays, anniversaries, or backyard bashes. We bring club-level energy to your private space.</p>
+							<ul class="text-slate-500 space-y-2 text-sm mb-8">
+								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Multi-Genre DJs</li>
+								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Compact Setup</li>
+								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> High Energy</li>
 							</ul>
 						</div>
 					</div>
 
 					<!-- Corporate -->
-					<div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-yellow-500/50 transition-all">
-						<div class="aspect-video overflow-hidden">
-							<img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800" alt="Corporate Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+					<div class="group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all shadow-xl">
+						<div class="h-48 overflow-hidden">
+							<img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800" alt="Corporate Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 						</div>
 						<div class="p-8">
-							<h3 class="text-2xl font-bold mb-4">Corporate Events</h3>
-							<p class="text-zinc-400 mb-6">Professional entertainment for product launches, holiday parties, and galas. We represent your brand with style and energy.</p>
-							<ul class="text-zinc-500 space-y-2 mb-8">
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Brand Integration</li>
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> High-Impact Production</li>
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Seamless Coordination</li>
+							<h3 class="text-2xl font-bold mb-4">Corporate</h3>
+							<p class="text-slate-400 mb-6 text-sm">Galas, holiday parties, and launches. Professional, reliable, and perfectly tailored to your brand.</p>
+							<ul class="text-slate-500 space-y-2 text-sm mb-8">
+								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Clean Presentation</li>
+								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Professional Gear</li>
+								<li class="flex items-center"><span class="text-amber-500 mr-2">✦</span> Liaison Services</li>
 							</ul>
 						</div>
 					</div>
 
-					<!-- Private Events -->
-					<div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-yellow-500/50 transition-all">
-						<div class="aspect-video overflow-hidden">
-							<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="Private Party" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-						</div>
-						<div class="p-8">
-							<h3 class="text-2xl font-bold mb-4">Private Parties</h3>
-							<p class="text-zinc-400 mb-6">Birthdays, anniversaries, or "just because." We bring the party atmosphere to any venue, big or small.</p>
-							<ul class="text-zinc-500 space-y-2 mb-8">
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Theme Specialization</li>
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Interactive Experiences</li>
-								<li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span> Flexible Packages</li>
-							</ul>
+					<!-- Lighting Design (NEW) -->
+					<div class="lg:col-span-4 group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all shadow-xl mt-4">
+						<div class="grid grid-cols-1 md:grid-cols-2 items-center">
+							<div class="h-64 md:h-full overflow-hidden">
+								<img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=1200" alt="Lighting Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+							</div>
+							<div class="p-10">
+								<div class="inline-block bg-white/10 text-white text-[10px] font-black px-2 py-0.5 rounded-full mb-4 uppercase tracking-[0.2em]">New for 2026</div>
+								<h3 class="text-3xl font-bold mb-4">Lighting Design</h3>
+								<p class="text-slate-400 mb-8 leading-relaxed">Transform any venue with our bespoke lighting packages. From elegant uplighting to high-impact moving heads, we paint your space with light.</p>
+								<div class="flex flex-wrap gap-4">
+									<span class="bg-slate-800 text-slate-300 px-4 py-2 rounded-xl text-xs font-bold">Intelligent Lighting</span>
+									<span class="bg-slate-800 text-slate-300 px-4 py-2 rounded-xl text-xs font-bold">Atmospheric Effects</span>
+									<span class="bg-slate-800 text-slate-300 px-4 py-2 rounded-xl text-xs font-bold">Custom Gobos</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -109,46 +155,46 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- Social Proof Section -->
-		<section id="testimonials" class="py-24 bg-zinc-900">
+		<section id="testimonials" class="py-32 bg-[#020617]/50">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center mb-20">
-					<h2 class="text-4xl md:text-6xl font-black mb-4">CLIENT LOVE</h2>
-					<div class="w-24 h-1.5 bg-yellow-500 mx-auto"></div>
+				<div class="text-center mb-24">
+					<h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">KIND WORDS</h2>
+					<div class="w-24 h-2 bg-amber-500 mx-auto rounded-full"></div>
 				</div>
 
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-					<div class="bg-zinc-800 p-10 rounded-2xl border border-zinc-700">
-						<div class="flex text-yellow-500 mb-4">★★★★★</div>
-						<p class="text-lg italic text-zinc-300 mb-6">"Brightside DJs absolutely killed it at our wedding! The dance floor was packed from the first song to the last. Highly recommend!"</p>
+					<div class="bg-slate-900 p-10 rounded-3xl border border-slate-800 relative shadow-xl">
+						<div class="flex text-amber-500 mb-6 text-xl">★★★★★</div>
+						<p class="text-lg italic text-slate-300 mb-8 leading-relaxed">"Brightside DJs absolutely killed it at our wedding! The dance floor was packed from the first song to the last. Highly recommend!"</p>
 						<div class="flex items-center">
-							<div class="w-12 h-12 bg-zinc-600 rounded-full mr-4"></div>
+							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4 border border-slate-600"></div>
 							<div>
-								<p class="font-bold">Sarah & James</p>
-								<p class="text-sm text-zinc-500">Wedding Clients</p>
+								<p class="font-bold text-white">Sarah & James</p>
+								<p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Wedding Clients</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="bg-zinc-800 p-10 rounded-2xl border border-zinc-700">
-						<div class="flex text-yellow-500 mb-4">★★★★★</div>
-						<p class="text-lg italic text-zinc-300 mb-6">"Incredible professionalism and production quality. They took our corporate gala to a whole new level."</p>
+					<div class="bg-slate-900 p-10 rounded-3xl border border-slate-800 relative shadow-xl">
+						<div class="flex text-amber-500 mb-6 text-xl">★★★★★</div>
+						<p class="text-lg italic text-slate-300 mb-8 leading-relaxed">"Incredible professionalism and production quality. They took our corporate gala to a whole new level."</p>
 						<div class="flex items-center">
-							<div class="w-12 h-12 bg-zinc-600 rounded-full mr-4"></div>
+							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4 border border-slate-600"></div>
 							<div>
-								<p class="font-bold">Mark Thompson</p>
-								<p class="text-sm text-zinc-500">Event Director, TechCorp</p>
+								<p class="font-bold text-white">Mark Thompson</p>
+								<p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Event Director, TechCorp</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="bg-zinc-800 p-10 rounded-2xl border border-zinc-700">
-						<div class="flex text-yellow-500 mb-4">★★★★★</div>
-						<p class="text-lg italic text-zinc-300 mb-6">"The energy they brought was unmatched. Our 40th birthday bash was the talk of the town for weeks!"</p>
+					<div class="bg-slate-900 p-10 rounded-3xl border border-slate-800 relative shadow-xl">
+						<div class="flex text-amber-500 mb-6 text-xl">★★★★★</div>
+						<p class="text-lg italic text-slate-300 mb-8 leading-relaxed">"The energy they brought was unmatched. Our 40th birthday bash was the talk of the town for weeks!"</p>
 						<div class="flex items-center">
-							<div class="w-12 h-12 bg-zinc-600 rounded-full mr-4"></div>
+							<div class="w-12 h-12 bg-slate-700 rounded-full mr-4 border border-slate-600"></div>
 							<div>
-								<p class="font-bold">Elena Rodriguez</p>
-								<p class="text-sm text-zinc-500">Private Party Host</p>
+								<p class="font-bold text-white">Elena Rodriguez</p>
+								<p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Private Party Host</p>
 							</div>
 						</div>
 					</div>
@@ -157,35 +203,53 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- CTA Section -->
-		<section id="contact" class="py-24 bg-yellow-500 text-zinc-950">
-			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-				<h2 class="text-5xl md:text-7xl font-black mb-8">READY TO PARTY?</h2>
-				<p class="text-xl md:text-2xl font-medium mb-12">Don't settle for average entertainment. Secure your date and let's create something legendary together.</p>
-				<form class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
-					<input type="text" placeholder="Full Name" class="bg-white/90 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-zinc-950 text-zinc-900" />
-					<input type="email" placeholder="Email Address" class="bg-white/90 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-zinc-950 text-zinc-900" />
-					<input type="date" class="bg-white/90 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-zinc-950 text-zinc-900" />
-					<select class="bg-white/90 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-zinc-950 text-zinc-900">
-						<option>Wedding</option>
-						<option>Corporate Event</option>
-						<option>Private Party</option>
-					</select>
-					<button type="submit" class="sm:col-span-2 bg-zinc-950 text-white font-black text-xl py-5 rounded-xl hover:bg-zinc-800 transition-colors mt-4">GET MY FREE QUOTE</button>
+		<section id="contact" class="py-32 relative overflow-hidden">
+			<div class="absolute inset-0 bg-amber-500"></div>
+			<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-400 to-amber-500"></div>
+			
+			<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-950">
+				<h2 class="text-5xl md:text-8xl font-black mb-10 tracking-tighter">READY TO BE LEGENDARY?</h2>
+				<p class="text-xl md:text-2xl font-medium mb-16 max-w-2xl mx-auto leading-relaxed opacity-90 text-slate-900">Dates for 2026/2027 are filling up fast. Tell us about your event and we'll be in touch within 24 hours.</p>
+				
+				<form class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+					<div class="text-left">
+						<label class="block text-xs font-black uppercase tracking-widest mb-2 ml-1">Full Name</label>
+						<input type="text" class="w-full bg-white/40 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-950/10 focus:border-slate-950 focus:ring-0 text-slate-950 placeholder-slate-700 font-bold transition-all" />
+					</div>
+					<div class="text-left">
+						<label class="block text-xs font-black uppercase tracking-widest mb-2 ml-1">Email</label>
+						<input type="email" class="w-full bg-white/40 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-950/10 focus:border-slate-950 focus:ring-0 text-slate-950 placeholder-slate-700 font-bold transition-all" />
+					</div>
+					<div class="text-left">
+						<label class="block text-xs font-black uppercase tracking-widest mb-2 ml-1">Date</label>
+						<input type="date" class="w-full bg-white/40 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-950/10 focus:border-slate-950 focus:ring-0 text-slate-950 font-bold transition-all" />
+					</div>
+					<div class="text-left">
+						<label class="block text-xs font-black uppercase tracking-widest mb-2 ml-1">Event Type</label>
+						<select class="w-full bg-white/40 backdrop-blur-md px-6 py-4 rounded-2xl border-2 border-slate-950/10 focus:border-slate-950 focus:ring-0 text-slate-950 font-bold transition-all">
+							<option>Wedding</option>
+							<option>Corporate</option>
+							<option>Private Party</option>
+							<option>Lighting Only</option>
+						</select>
+					</div>
+					<button type="submit" class="sm:col-span-2 bg-slate-950 text-white font-black text-xl py-6 rounded-2xl hover:bg-slate-800 hover:shadow-2xl transition-all transform hover:-translate-y-1 mt-4">GET MY CUSTOM QUOTE</button>
 				</form>
 			</div>
 		</section>
 
 		<!-- Footer -->
-		<footer class="py-12 bg-zinc-950 border-t border-zinc-800">
+		<footer class="py-20 bg-[#020617] border-t border-slate-900">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-				<div class="mb-8 md:mb-0">
-					<span class="text-xl font-extrabold tracking-tighter text-white">BRIGHTSIDE<span class="text-yellow-500">DJs</span></span>
-					<p class="text-zinc-500 text-sm mt-2">© 2026 Brightside DJs. All Rights Reserved.</p>
+				<div class="mb-12 md:mb-0 text-center md:text-left">
+					<span class="text-2xl font-extrabold tracking-tighter text-white">BRIGHTSIDE<span class="text-amber-500">DJs</span></span>
+					<p class="text-slate-500 text-sm mt-4 font-medium tracking-tight">Crafting legendary nights in West Kelowna since 2014.</p>
+					<p class="text-slate-600 text-xs mt-2 uppercase tracking-widest font-black">© 2026 Brightside DJs. All Rights Reserved.</p>
 				</div>
-				<div class="flex space-x-6 text-zinc-400">
-					<a href="#" class="hover:text-yellow-500">Instagram</a>
-					<a href="#" class="hover:text-yellow-500">Facebook</a>
-					<a href="#" class="hover:text-yellow-500">Mixcloud</a>
+				<div class="flex space-x-8 text-slate-400">
+					<a href="#" class="hover:text-amber-500 transition-colors font-black uppercase tracking-widest text-xs">Instagram</a>
+					<a href="#" class="hover:text-amber-500 transition-colors font-black uppercase tracking-widest text-xs">Facebook</a>
+					<a href="#" class="hover:text-amber-500 transition-colors font-black uppercase tracking-widest text-xs">Mixcloud</a>
 				</div>
 			</div>
 		</footer>
@@ -194,10 +258,14 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	@keyframes fadeIn {
-		from { opacity: 0; transform: translateY(20px); }
+		from { opacity: 0; transform: translateY(30px); }
 		to { opacity: 1; transform: translateY(0); }
 	}
 	.animate-fade-in {
-		animation: fadeIn 1s ease-out forwards;
+		animation: fadeIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+	}
+	.animate-fade-in-delay {
+		opacity: 0;
+		animation: fadeIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
 	}
 </style>
